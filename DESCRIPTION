@@ -1,13 +1,16 @@
 Package: myLinearPackage
-Title: What the Package Does (One Line, Title Case)
+Title: Produce a ggpair plot Y vs less than 5 columns & outputs Coefficients and P-value
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Bineyam",
            family = "Tafesse",
            role = c("aut", "cre"),
-           email = "bineyam.tafesse@hotmail.com",
+           email = "bineyam@vt.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This function produces a ggpair plot using GGally pakage for the column Y vs the columns presented in in the matrix X.
+             It will subset for the rows only presented on sub parameter. 
+             It will also produce the coefficients and p-value for the linear model fit.
+
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8

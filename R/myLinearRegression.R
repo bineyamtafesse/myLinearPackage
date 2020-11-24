@@ -1,13 +1,15 @@
-#' Produce a ggpair plot Y vs less than 5 columns & output Coefficients and P-value
+#' Produce a ggpair plot Y vs less than 5 columns & outputs Coefficients and P-value
 #'
 #' This function produces a ggpair plot using GGally pakage for the column Y vs the columns
 #' presented in in the matrix X. It will subset for the rows only presented on sub parameter.
 #' It will also produce the coefficients and p-value for the linear model fit.
 #'
-#' @param X is a matrix.
-#' @param Y a vector representing the response.
-#' @param sub a vector representing the number of rows from the matrix. Number of sub should match Y.
-#' @return ggpair plot,  \code{coef} and \code{p-value}.
+#' @param X: a matrix of covariates.
+#' @param Y: a vector of outcomes.
+#' @param sub: a list of subjects (i.e. a set of integers corresponding to rows in X). Number of sub should match Y.
+#' @return ggpair scatter plot
+#' @return \code{coef} :a set of coefficients from the linear regression of Y on X
+#' @return \code{p-value}: the set of corrresponding p-values
 #' @export
 #' @examples
 #' X = matrix(runif(100),nrow=20,ncol=4,byrow = TRUE)
