@@ -10,10 +10,11 @@ Authors@R:
 Description: This function produces a ggpair plot using GGally pakage for the column Y vs the columns presented in in the matrix X.
              It will subset for the rows only presented on sub parameter. 
              It will also produce the coefficients and p-value for the linear model fit.
-
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)

@@ -2,19 +2,23 @@
 % Please edit documentation in R/myLinearRegression.R
 \name{myLinearRegression}
 \alias{myLinearRegression}
-\title{Produce a ggpair plot Y vs less than 5 columns & output Coefficients and P-value}
+\title{Produce a ggpair plot Y vs less than 5 columns & outputs Coefficients and P-value}
 \usage{
 myLinearRegression(X = X, Y = Y, sub = sub)
 }
 \arguments{
-\item{X}{is a matrix.}
+\item{X:}{a matrix of covariates.}
 
-\item{Y}{a vector representing the response.}
+\item{Y:}{a vector of outcomes.}
 
-\item{sub}{a vector representing the number of rows from the matrix. Number of sub should match Y.}
+\item{sub:}{a list of subjects (i.e. a set of integers corresponding to rows in X). Number of sub should match Y.}
 }
 \value{
-ggpair plot,  \code{coef} and \code{p-value}.
+ggpair scatter plot
+
+\code{coef} :a set of coefficients from the linear regression of Y on X
+
+\code{p-value}: the set of corrresponding p-values
 }
 \description{
 This function produces a ggpair plot using GGally pakage for the column Y vs the columns
